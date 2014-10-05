@@ -7,5 +7,4 @@ $(document).ready(function() {
     partTwo();
     partThree();
     partFour();
-
 } );

@@ -10,8 +10,7 @@ function partOne()
 
     else if (currentSection == 3) {
         var eyesButton = createButton("Eyes", true);
-        $("#buttons").append(eyesButton);
-
+        $("#buttons").append(eyesButton); 
         $("#Eyes").click(function() {
             partOne();
         } );
@@ -69,7 +68,7 @@ function fallAsleepPartOne(fall_asleep_rate) {
     fall_asleep_rate = typeof fall_asleep_rate !== 'undefined' ? fall_asleep_rate : FALL_ASLEEP_RATE;
     $("#text").animate({ opacity: 0.75}, fall_asleep_rate * 0.25, "linear",
             function() {
-                $("#Eyes").fadeIn(fall_asleep_rate);
+                $("#Eyes").fadeIn(fall_asleep_rate * 0.75);
             });
     $("#text").animate({ opacity: 0.0}, fall_asleep_rate * 0.75, "linear");
 }
